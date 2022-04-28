@@ -80,7 +80,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/webapi/architecture/logical-layers.html",
-          "hash": "ntwXtycWgHxAnccps4b7mg=="
+          "hash": "US80enBPlYDtdl5yWHP/Eg=="
         }
       },
       "is_incremental": false,
@@ -247,13 +247,13 @@
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
           "incrementalPhase": "build"
         }
       }
