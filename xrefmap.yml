@@ -4,6 +4,9 @@ references:
 - uid: eisk-get-recognized
   name: Get Recognized
   href: docs/webapi/support/eisk-get-recognized.html
+- uid: eisk-support-index
+  name: Get Support
+  href: docs/webapi/support/index.html
 - uid: eisk-webapi-architecture
   name: Architectural Overview
   href: docs/webapi/architecture/index.html

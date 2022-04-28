@@ -81,46 +81,54 @@
             <article class="content wrap" id="_content" data-uid="eisk-webapi-get-started">
 
 
-<p><a href="https://dev.azure.com/EiskOps/Eisk/_build/latest?definitionId=3"><img src="https://dev.azure.com/EiskOps/Eisk/_apis/build/status/Eisk-WebApi-TemplatePack-CI" alt="Build status"></a> <a href="https://builtwithdot.net/project/334/eisk"><img src="https://builtwithdot.net/project/334/eisk/badge" alt="BuitlWithDot.Net shield"></a></p>
+<p><a href="https://www.nuget.org/packages/Eisk.WebApi/"><img src="https://buildstats.info/nuget/Eisk.WebApi" alt="NuGet Badge"></a>   <a href="https://dev.azure.com/EiskOps/Eisk/_build/latest?definitionId=3"><img src="https://dev.azure.com/EiskOps/Eisk/_apis/build/status/Eisk-WebApi-TemplatePack-CI" alt="Build status"></a> <a href="https://builtwithdot.net/project/334/eisk"><img src="https://builtwithdot.net/project/334/eisk/badge" alt="BuitlWithDot.Net shield"></a></p>
 <h1 id="getting-started-with-eisk-web-api">Getting Started with EISK Web Api</h1>
-<p>EISK makes it easy to write scalable and secured web api on top of Microsoft's new cutting edge .net core technologies.</p>
+<p>EISK makes it easy to write scalable and secured web api on top of Microsoft's new cutting edge .net based technologies.</p>
 <p>With an optional set of customizable utility classes, samples and tools, it lets you creating new web api straight away without wide technical experience or learning curve.</p>
 <h2 id="give-a-star-">Give a Star! ⭐</h2>
 <p>If you like or are using this project to learn or start your solution, please give it a <a href="https://github.com/EISK/eisk.webapi">star</a>. Thanks!</p>
+<h2 id="core-technologies">Core Technologies</h2>
+<ul>
+<li>Platform: <a href="https://devblogs.microsoft.com/dotnet/announcing-net-6/">.NET Framework 6.0</a> - The Fastest .NET Yet!</li>
+<li>Web Framework: ASP.NET Web API</li>
+<li>ORM Framework: Entity Framework</li>
+<li>Programming Language: C#</li>
+</ul>
 <h2 id="sample-use-case">Sample Use Case</h2>
-<p>Using a simple table entity 'Employee' it demonstrates all aspect of web development including layered architecture following DDD, micro service, unit and integration tests, building and deploying in cloud environment.</p>
-<p>Here is a simple CRUD use case illustrated in the default template:</p>
+<p>Using a simple data entity 'Employee', EISK shows how we can build scalable web api's easily along with addressing real-world domain and business use cases, including:</p>
 <ul>
 <li>[C]reating a new employee record</li>
 <li>[R]ead existing employee records</li>
 <li>[U]pdate an existing employee record</li>
-<li>[D]elete existing employee records</li>
+<li>[D]elete an existing employee record</li>
 </ul>
-<h3 id="architecture-overview">Architecture Overview</h3>
+<p><img src="https://raw.githubusercontent.com/EISK/eisk/master/eisk-webapi-small.png" alt="eisk web api"></p>
+<p>Check the <a href="https://eisk-webapi.azurewebsites.net">Live Demo</a> to see the use case implementation in action.</p>
+<h2 id="dev-features">Dev Features</h2>
+<p>You can build your own RESTful web api using EISK's Visual Studio and ASP.NET Web API project template.</p>
+<p>The template includes (but not limited to), project structure and all utility classes mentioned below to enable building modern cloud-aware RESTful APIs.</p>
 <ul>
-<li>Clean Architecture</li>
+<li><strong>Clean Architecture</strong> based implementation</li>
+<li><strong>Swagger/OpenAPI</strong> based RESTful Web API specification</li>
+<li><strong>Base classes</strong> for common CRUD functionalities and testing for logical layers (i.e. controller, domain, data layers)</li>
+<li><strong>Utility classes</strong> to generate real-world test data</li>
+<li>Support for database integration tests with both in-memory database and SQL server</li>
 </ul>
-<h2 id="core-technology-areas">Core Technology Areas</h2>
-<ul>
-<li><a href="https://devblogs.microsoft.com/dotnet/announcing-net-6/">.NET Framework 6.0</a> - The Fastest .NET Yet</li>
-<li>ASP.NET Core (Web Api)</li>
-<li>Entity Framework Core</li>
-<li>C# Programming Language</li>
-<li>Visual Studio</li>
-</ul>
-<h2 id="system-requirements-development">System Requirements (Development)</h2>
+<h2 id="quickstart-guide">QuickStart Guide</h2>
+<p>Before installing EISK, all you need to have the following Visual Studio version installed.</p>
 <ul>
 <li>Visual Studio 2022 (<a href="https://visualstudio.microsoft.com/vs/community/">Free</a> Community Edition or higher)</li>
 </ul>
-<h2 id="quickstart-guide">QuickStart Guide</h2>
 <p>Getting started with EISK Web Api is pretty easy.</p>
 <p>You can either <a href="https://github.com/EISK/eisk.webapi.git">clone</a> from github or simply run the following <code>dotnet new</code> command in command prompt to create a new project from EISK:</p>
 <ul>
-<li>Command to install EISK template in your machine: <code>dotnet new -i eisk.webapi</code></li>
+<li>Command to install EISK template in your machine: <code>dotnet new --install Eisk.WebApi</code></li>
 <li>Command to create a new project: <code>dotnet new eiskwebapi -n Eisk</code></li>
 </ul>
 <p>Once the contents are available, just open the created solution, select &quot;Eisk.WebApi&quot; as startup project and press F5!</p>
 <p>That's it!</p>
+<h3 id="how-about-older-versions">How About Older Versions?</h3>
+<p>If you want to continue using one of the older versions of EISK, check the <a href="https://github.com/EISK/eisk.webapi/releases">releases</a> page for specific instructions to install and use older versions of EISK.</p>
 <h2 id="whats-next">What's Next?</h2>
 <p>After running the created project successfully, you'll get an understanding about how the sample use case has been used to explore cutting edge technologies for building a web api.</p>
 <p>Next - you can try some hands-on experience by creating your own api on top of your custom entity and see how quickly you can roll out an enterprise quality web api with similar quality and productivity.</p>
@@ -131,6 +139,8 @@
 <li><a href="https://eisk.github.io/docs/webapi/architecture/logical-layers.html">Logical Layer Architecture</a></li>
 <li><a href="https://eisk.github.io/docs/webapi/technical-reference/technology-stack.html">Technology Stack</a></li>
 </ul>
+<h2 id="questions">Questions?</h2>
+<p>Should you have any questions or need any help to implement new cool features, you can <a href="https://stackoverflow.com/questions/ask?tags=eisk,webapi,asp.net-core&amp;title=In%20EISK,%20How%20Do%20We%20..">ask</a> in StackOverflow community with tag <a href="https://stackoverflow.com/questions/tagged/eisk">eisk</a> and get prompt response.</p>
 </article>
           </div>
           
