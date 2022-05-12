@@ -5,6 +5,17 @@
   "files": [
     {
       "type": "Resource",
+      "source_relative_path": "art/eisk-logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "art/eisk-logo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "art/layers-architecture.png",
       "output": {
         "resource": {
@@ -222,6 +233,54 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "readme/git-repo.md",
+      "output": {
+        ".html": {
+          "relative_path": "readme/git-repo.html",
+          "hash": "69Xur0GIDOULmuY0LbAHcQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "readme/github-release.md",
+      "output": {
+        ".html": {
+          "relative_path": "readme/github-release.html",
+          "hash": "qm09zscO7sO0tACsDq/rCQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "readme/nuget.md",
+      "output": {
+        ".html": {
+          "relative_path": "readme/nuget.html",
+          "hash": "zlCkJ63Cw9BHCDaIJRahlw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "readme/vs-gallery.md",
+      "output": {
+        ".html": {
+          "relative_path": "readme/vs-gallery.html",
+          "hash": "JGL4dc6DI1AcOTcep+0cSw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
@@ -247,13 +306,13 @@
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
           "incrementalPhase": "build"
         }
       }
