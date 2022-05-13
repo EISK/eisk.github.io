@@ -115,7 +115,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/webapi/downloads/dotnet-new.html",
-          "hash": "sNh412oOiMJ0lZ8Z3ZyfQQ=="
+          "hash": "uTF41I6ztT3riLwJzbBsGg=="
         }
       },
       "is_incremental": false,
@@ -127,7 +127,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/webapi/downloads/git.html",
-          "hash": "H74dx0y2W1eZSYk3JCPCVg=="
+          "hash": "4B85HKaLTqXqPLMgQSzZxA=="
         }
       },
       "is_incremental": false,
@@ -139,7 +139,19 @@
       "output": {
         ".html": {
           "relative_path": "docs/webapi/downloads/index.html",
-          "hash": "qMKik5r99S9688qVu8wqJw=="
+          "hash": "N/cEkTexTdclBOGSCLjOvA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/webapi/downloads/vsix.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/webapi/downloads/vsix.html",
+          "hash": "HkLrsUKo3HdKsQ+OQMGcuA=="
         }
       },
       "is_incremental": false,
@@ -199,7 +211,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/webapi/technical-reference/technology-stack.html",
-          "hash": "gPIbXOJTvY0DrcAMfdIURw=="
+          "hash": "+zF5MHlUWCfgV0DrMC53mA=="
         }
       },
       "is_incremental": false,
@@ -211,7 +223,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/webapi/toc.html",
-          "hash": "5nz42+VC3Pw8wdiRYlCBwA=="
+          "hash": "dx1MlqMgnwKJFm1D/lEzOA=="
         }
       },
       "is_incremental": false,
@@ -274,7 +286,7 @@
       "output": {
         ".html": {
           "relative_path": "readme/vs-gallery.html",
-          "hash": "JGL4dc6DI1AcOTcep+0cSw=="
+          "hash": "eYdyyCUrXIG9H4G8WYGvTQ=="
         }
       },
       "is_incremental": false,
@@ -301,11 +313,6 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -313,6 +320,11 @@
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }

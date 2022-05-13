@@ -19,6 +19,9 @@ references:
 - uid: eisk-webapi-download-options-git
   name: EISK Web Api - git
   href: docs/webapi/downloads/git.html
+- uid: eisk-webapi-download-options-visx
+  name: EISK Web Api - Visual Studio Extension (VSIX)
+  href: docs/webapi/downloads/vsix.html
 - uid: eisk-webapi-downloads
   name: EISK Web Api Download options
   href: docs/webapi/downloads/index.html
