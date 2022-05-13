@@ -115,7 +115,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/webapi/downloads/dotnet-new.html",
-          "hash": "uTF41I6ztT3riLwJzbBsGg=="
+          "hash": "ndJBXwp6k6bcW/R8/0ZrpA=="
         }
       },
       "is_incremental": false,
@@ -127,7 +127,19 @@
       "output": {
         ".html": {
           "relative_path": "docs/webapi/downloads/git.html",
-          "hash": "4B85HKaLTqXqPLMgQSzZxA=="
+          "hash": "/2PQOA8A3GlPrFS1zMIR7Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/webapi/downloads/github-release.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/webapi/downloads/github-release.html",
+          "hash": "NAPp0RlKh+RtyFCff6OpfQ=="
         }
       },
       "is_incremental": false,
@@ -139,7 +151,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/webapi/downloads/index.html",
-          "hash": "N/cEkTexTdclBOGSCLjOvA=="
+          "hash": "9cnkYvau6EEG2Fds8m73aw=="
         }
       },
       "is_incremental": false,
@@ -151,7 +163,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/webapi/downloads/vsix.html",
-          "hash": "HkLrsUKo3HdKsQ+OQMGcuA=="
+          "hash": "bVVj0PUIyXdNE/RefdlRHw=="
         }
       },
       "is_incremental": false,
@@ -313,13 +325,13 @@
         "incrementalPhase": "build"
       },
       "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
           "incrementalPhase": "build"
         },
         "TocDocumentProcessor": {
