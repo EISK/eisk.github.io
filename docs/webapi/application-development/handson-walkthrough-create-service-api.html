@@ -147,26 +147,21 @@ namespace Eisk.Domains.Employee
 <p>Add a new class as provided below on the following solution location:</p>
 <p><code>Project: Eisk.WebApi</code></p>
 <p><code>New file location: Controllers\EmployeeTimeSheetsController.cs</code></p>
-<pre><code>using Microsoft.AspNetCore.Mvc;
+<pre><code>using Eisk.Core.WebApi;
+using Eisk.Domains.Entities;
+using Eisk.DomainServices;
+using Microsoft.AspNetCore.Mvc;
 
-namespace Eisk.WebApi.Controllers
+namespace Eisk.WebApi.Controllers;
+
+[ApiController]
+[Route(&quot;[controller]&quot;)]
+public class EmployeesController : WebApiControllerBase&lt;Employee, int&gt;
 {
-	using Core.DomainService;
-	using Domains.Entities;
-	using Eisk.Core.WebApi;
+    public EmployeesController(EmployeeDomainService employeeDomainService) : base(employeeDomainService)
+    {
 
-	[Route(&quot;api/[controller]&quot;)]
-	public class EmployeeTimeSheetsController
-		:WebApiControllerBase&lt;EmployeeTimeSheet,int&gt;
-	{
-		public EmployeeTimeSheetsController(
-			DomainService&lt;EmployeeTimeSheet, int&gt; 
-				employeeTimeSheetDomainService)
-					:base(employeeTimeSheetDomainService)
-		{
-			
-		}
-	}
+    }
 }
 </code></pre>
 <h3 id="build--run-locally">Build &amp; Run Locally</h3>
