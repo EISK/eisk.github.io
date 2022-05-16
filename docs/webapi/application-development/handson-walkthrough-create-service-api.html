@@ -156,12 +156,16 @@ namespace Eisk.WebApi.Controllers;
 
 [ApiController]
 [Route(&quot;[controller]&quot;)]
-public class EmployeesController : WebApiControllerBase&lt;Employee, int&gt;
+public class EmployeeTimeSheetsController
+	:WebApiControllerBase&lt;EmployeeTimeSheet,int&gt;
 {
-    public EmployeesController(EmployeeDomainService employeeDomainService) : base(employeeDomainService)
-    {
-
-    }
+	public EmployeeTimeSheetsController(
+		DomainService&lt;EmployeeTimeSheet, int&gt; 
+			employeeTimeSheetDomainService)
+				:base(employeeTimeSheetDomainService)
+	{
+		
+	}
 }
 </code></pre>
 <h3 id="build--run-locally">Build &amp; Run Locally</h3>
