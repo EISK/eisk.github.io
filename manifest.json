@@ -43,7 +43,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/webapi/application-development/handson-walkthrough-create-service-api.html",
-          "hash": "+wlh9y+y7WrUPSc5TxX/EQ=="
+          "hash": "dB9+Ox5aslf6li3HxIMarQ=="
         }
       },
       "is_incremental": false,
@@ -330,13 +330,13 @@
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
           "incrementalPhase": "build"
         }
       }
