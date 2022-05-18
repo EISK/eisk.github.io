@@ -5,6 +5,28 @@
   "files": [
     {
       "type": "Resource",
+      "source_relative_path": "art/brand/eisk-logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "art/brand/eisk-logo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "art/docs/layers-architecture.png",
+      "output": {
+        "resource": {
+          "relative_path": "art/docs/layers-architecture.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "art/eisk-logo.png",
       "output": {
         "resource": {
@@ -16,10 +38,32 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "art/layers-architecture.png",
+      "source_relative_path": "art/intro/eisk-v7-mvc.png",
       "output": {
         "resource": {
-          "relative_path": "art/layers-architecture.png"
+          "relative_path": "art/intro/eisk-v7-mvc.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "art/intro/eisk-v8-webapi.png",
+      "output": {
+        "resource": {
+          "relative_path": "art/intro/eisk-v8-webapi.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "art/intro/eisk-v9-webapi.png",
+      "output": {
+        "resource": {
+          "relative_path": "art/intro/eisk-v9-webapi.png"
         }
       },
       "is_incremental": false,
@@ -91,7 +135,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/webapi/architecture/logical-layers.html",
-          "hash": "US80enBPlYDtdl5yWHP/Eg=="
+          "hash": "MWVVDZFKBZtn2dHwIGAm6Q=="
         }
       },
       "is_incremental": false,
@@ -325,18 +369,18 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
+        "ResourceDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "ResourceDocumentProcessor": {
+        "TocDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
